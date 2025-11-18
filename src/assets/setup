@@ -1,0 +1,4 @@
+npm create vite@latest nama_project
+npm install -D tailwindcss@3
+npx tailwindcss init
+npm install -D postcss autoprefixer 

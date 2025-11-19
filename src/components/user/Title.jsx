@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Title = () => {
-  const text = " Raharpa Thrift";
+  const text = " Selamat Datang";
 
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
@@ -39,7 +39,7 @@ const Title = () => {
   return (
     <div className="text-start mt-10 px-8">
       <h1 className="font-poppins font-extrabold text-4xl text-gray-900 tracking-wide">
-        Welcome,
+        Hallo,
         {isSmallScreen ? text : displayText}
         {!isSmallScreen && <span className="animate-blink ">|</span>}
       </h1>

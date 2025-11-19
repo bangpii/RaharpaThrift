@@ -22,8 +22,9 @@ const User = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-white p-4 flex justify-center relative overflow-hidden">
       
+      {/* Hapus h-[93vh] dan ganti dengan min-h-screen atau flex-1 */}
       <div 
-        className="w-full h-[93vh] bg-white rounded-2xl shadow-2xl p-6 mt-4 overflow-hidden flex flex-col transform transition-all duration-300 hover:shadow-3xl relative z-10"
+        className="w-full min-h-screen bg-white rounded-2xl shadow-2xl p-6 mt-4 overflow-hidden flex flex-col transform transition-all duration-300 hover:shadow-3xl relative z-10"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -31,12 +32,12 @@ const User = () => {
         <Header />
         <Title />
 
-        {/* Layout kanan-kiri */}
-        <div className="flex gap-4 mt-4 h-full relative">
+        {/* Layout kanan-kiri - ubah height dan overflow */}
+        <div className="flex gap-4 mt-4 flex-1 min-h-0 relative">
 
-          {/* Chat */}
+          {/* Chat - ubah overflow */}
           <div 
-            className="flex-1 h-full overflow-hidden"
+            className="flex-1 h-full overflow-auto" // ubah dari overflow-hidden ke overflow-auto
             data-aos="fade-right"
             data-aos-delay="400"
           >

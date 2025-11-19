@@ -37,7 +37,7 @@ const User = () => {
 
           {/* Chat - ubah overflow */}
           <div 
-            className="flex-1 h-full overflow-auto" // ubah dari overflow-hidden ke overflow-auto
+            className="flex-1 h-full overflow-auto " // ubah dari overflow-hidden ke overflow-auto
             data-aos="fade-right"
             data-aos-delay="400"
           >

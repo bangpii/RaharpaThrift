@@ -15,7 +15,7 @@ const Header = () => {
         max-[450px]:text-3xl max-[390px]:text-2xl transform transition-transform hover:scale-105
         whitespace-nowrap"
       >
-       Raharpa <span className="text-pink-500">Thrift</span>
+       {/* Raharpa <span className="text-pink-500">Thrift</span> */}
       </h2>
 
       {/* Navigation Buttons */}

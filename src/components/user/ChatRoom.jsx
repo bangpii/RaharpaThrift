@@ -33,7 +33,7 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
     <div className="w-full h-full flex flex-col bg-white rounded-2xl border border-amber-100 
                     shadow-[0_10px_30px_rgba(186,118,48,0.1),0_4px_12px_rgba(186,118,48,0.05),inset_0_1px_0_rgba(255,255,255,0.8)]
                     transform transition-all duration-500 hover:shadow-[0_20px_40px_rgba(186,118,48,0.15),0_8px_24px_rgba(186,118,48,0.1),inset_0_1px_0_rgba(255,255,255,0.9)]
-                    hover:-translate-y-1 relative">
+                    hover:-translate-y-1 relative max-[400px]:mx-1 max-[400px]:w-[calc(100%-8px)]">
       
       {/* Efek 3D Border */}
       <div className="absolute inset-0 rounded-2xl border-2 border-white/50 pointer-events-none"></div>
@@ -41,30 +41,36 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
       {/* Header */}
       <div className="flex items-center justify-between px-3 xs:px-4 sm:px-6 py-3 xs:py-4 border-b border-amber-100 
                      bg-gradient-to-r from-white to-amber-50 rounded-t-2xl
-                     shadow-[inset_0_2px_4px_rgba(255,255,255,0.8),0_2px_8px_rgba(186,118,48,0.1)]">
-        <div className="flex items-center gap-2 xs:gap-3 sm:gap-4">
+                     shadow-[inset_0_2px_4px_rgba(255,255,255,0.8),0_2px_8px_rgba(186,118,48,0.1)]
+                     max-[400px]:px-3 max-[400px]:py-3">
+        <div className="flex items-center gap-2 xs:gap-3 sm:gap-4 max-[400px]:gap-2">
           {/* Profile 3D Effect */}
           <div className="relative">
             <div className="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 rounded-2xl 
                            bg-gradient-to-br from-amber-600 to-amber-700 
                            shadow-[0_8px_20px_rgba(186,118,48,0.3),inset_0_2px_4px_rgba(255,255,255,0.3)]
                            flex items-center justify-center text-white text-lg xs:text-xl sm:text-2xl 
-                           transform transition-transform hover:scale-110 hover:rotate-3">
+                           transform transition-transform hover:scale-110 hover:rotate-3
+                           max-[400px]:w-9 max-[400px]:h-9 max-[400px]:text-base">
               <i className="bx bx-user"></i>
             </div>
             <div className="absolute -bottom-1 -right-1 w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 
                            bg-green-400 rounded-full border-2 border-white 
-                           shadow-[0_2px_8px_rgba(34,197,94,0.5)]"></div>
+                           shadow-[0_2px_8px_rgba(34,197,94,0.5)]
+                           max-[400px]:w-2.5 max-[400px]:h-2.5"></div>
           </div>
           
-          <div>
+          <div className="max-[400px]:flex-1 max-[400px]:min-w-0">
             <h1 className="text-base xs:text-lg sm:text-xl font-bold text-gray-900 
-                          drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
+                          drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]
+                          max-[400px]:text-sm max-[400px]:truncate">
               Live Chat Room
             </h1>
-            <p className="text-xs text-green-600 font-medium flex items-center gap-1">
+            <p className="text-xs text-green-600 font-medium flex items-center gap-1
+                         max-[400px]:text-[10px] max-[400px]:mt-0.5">
               <span className="w-1.5 h-1.5 xs:w-2 xs:h-2 bg-green-500 rounded-full animate-pulse 
-                              shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+                              shadow-[0_0_8px_rgba(34,197,94,0.6)]
+                              max-[400px]:w-1.5 max-[400px]:h-1.5"></span>
               Admin • Online
             </p>
           </div>
@@ -76,9 +82,10 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
           className="p-2 xs:p-3 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 
                      text-white shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
                      transform transition-all duration-300 hover:scale-110 
-                     hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden"
+                     hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden
+                     max-[400px]:p-2 max-[400px]:min-w-[36px] max-[400px]:h-9"
         >
-          <i className="bx bx-heart text-base xs:text-lg sm:text-xl"></i>
+          <i className="bx bx-heart text-base xs:text-lg sm:text-xl max-[400px]:text-sm"></i>
         </button>
       </div>
 
@@ -86,67 +93,83 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
       <div className="flex-1 p-3 xs:p-4 sm:p-6 overflow-y-auto space-y-3 xs:space-y-4 sm:space-y-6 
                      bg-gradient-to-b from-white to-amber-25
                      shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]
-                     [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                     [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
+                     max-[400px]:p-2 max-[400px]:space-y-2">
         
         {/* Admin Message */}
-        <div className="flex items-start gap-2 xs:gap-3 sm:gap-4 transform transition-transform">
+        <div className="flex items-start gap-2 xs:gap-3 sm:gap-4 transform transition-transform
+                       max-[400px]:gap-2">
           <div className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 rounded-2xl 
                          bg-gradient-to-br from-gray-400 to-gray-600 
                          shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.3)]
-                         flex items-center justify-center text-white shadow-lg flex-shrink-0">
-            <i className="bx bx-user text-xs xs:text-sm sm:text-base"></i>
+                         flex items-center justify-center text-white shadow-lg flex-shrink-0
+                         max-[400px]:w-7 max-[400px]:h-7">
+            <i className="bx bx-user text-xs xs:text-sm sm:text-base max-[400px]:text-xs"></i>
           </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-xs font-semibold text-gray-600 mb-1">Admin • 09:12</p>
+          <div className="flex-1 min-w-0 max-[400px]:max-w-[calc(100%-40px)]">
+            <p className="text-xs font-semibold text-gray-600 mb-1 max-[400px]:text-[10px] max-[400px]:mb-0.5">Admin • 09:12</p>
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 
                            px-2 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-3 rounded-2xl rounded-tl-none 
                            shadow-[0_4px_12px_rgba(0,0,0,0.1),inset_0_1px_2px_rgba(255,255,255,0.8)]
                            border border-gray-200 transform transition-all duration-300 
                            hover:shadow-[0_6px_20px_rgba(0,0,0,0.15),inset_0_1px_2px_rgba(255,255,255,0.9)] 
-                           inline-block max-w-[80%] xs:max-w-[85%] sm:max-w-xs">
-              <p className="text-xs xs:text-sm sm:text-base">Hallo, ada yang bisa saya bantu?</p>
+                           inline-block max-w-[80%] xs:max-w-[85%] sm:max-w-xs
+                           max-[400px]:max-w-full max-[400px]:px-2 max-[400px]:py-1.5">
+              <p className="text-xs xs:text-sm sm:text-base max-[400px]:text-xs max-[400px]:leading-tight">
+                Hallo, ada yang bisa saya bantu?
+              </p>
             </div>
           </div>
         </div>
 
         {/* User Message */}
-        <div className="flex items-start justify-end gap-2 xs:gap-3 sm:gap-4 transform transition-transform">
-          <div className="flex-1 min-w-0 text-right">
-            <p className="text-xs font-semibold text-gray-600 mb-1">You • 09:13</p>
+        <div className="flex items-start justify-end gap-2 xs:gap-3 sm:gap-4 transform transition-transform
+                       max-[400px]:gap-2">
+          <div className="flex-1 min-w-0 text-right max-[400px]:max-w-[calc(100%-40px)]">
+            <p className="text-xs font-semibold text-gray-600 mb-1 max-[400px]:text-[10px] max-[400px]:mb-0.5">You • 09:13</p>
             <div className="bg-gradient-to-r from-amber-600 to-amber-700 text-white 
                            px-2 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-3 rounded-2xl rounded-tr-none 
                            shadow-[0_4px_12px_rgba(186,118,48,0.3),inset_0_1px_2px_rgba(255,255,255,0.2)]
                            inline-block transform transition-all duration-300 
                            hover:shadow-[0_6px_20px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)] 
-                           max-w-[80%] xs:max-w-[85%] sm:max-w-xs">
-              <p className="text-xs xs:text-sm sm:text-base">Saya ingin bertanya tentang produk...</p>
+                           max-w-[80%] xs:max-w-[85%] sm:max-w-xs
+                           max-[400px]:max-w-full max-[400px]:px-2 max-[400px]:py-1.5">
+              <p className="text-xs xs:text-sm sm:text-base max-[400px]:text-xs max-[400px]:leading-tight">
+                Saya ingin bertanya tentang produk...
+              </p>
             </div>
           </div>
           <div className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 rounded-2xl 
                          bg-gradient-to-br from-amber-600 to-amber-700 
                          shadow-[0_4px_12px_rgba(186,118,48,0.3),inset_0_1px_2px_rgba(255,255,255,0.3)]
-                         flex items-center justify-center text-white shadow-lg flex-shrink-0">
-            <i className="bx bx-user text-xs xs:text-sm sm:text-base"></i>
+                         flex items-center justify-center text-white shadow-lg flex-shrink-0
+                         max-[400px]:w-7 max-[400px]:h-7">
+            <i className="bx bx-user text-xs xs:text-sm sm:text-base max-[400px]:text-xs"></i>
           </div>
         </div>
 
         {/* Tambahkan beberapa chat untuk demo scroll */}
-        <div className="flex items-start gap-2 xs:gap-3 sm:gap-4 transform transition-transform">
+        <div className="flex items-start gap-2 xs:gap-3 sm:gap-4 transform transition-transform
+                       max-[400px]:gap-2">
           <div className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 rounded-2xl 
                          bg-gradient-to-br from-gray-400 to-gray-600 
                          shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.3)]
-                         flex items-center justify-center text-white shadow-lg flex-shrink-0">
-            <i className="bx bx-user text-xs xs:text-sm sm:text-base"></i>
+                         flex items-center justify-center text-white shadow-lg flex-shrink-0
+                         max-[400px]:w-7 max-[400px]:h-7">
+            <i className="bx bx-user text-xs xs:text-sm sm:text-base max-[400px]:text-xs"></i>
           </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-xs font-semibold text-gray-600 mb-1">Admin • 09:14</p>
+          <div className="flex-1 min-w-0 max-[400px]:max-w-[calc(100%-40px)]">
+            <p className="text-xs font-semibold text-gray-600 mb-1 max-[400px]:text-[10px] max-[400px]:mb-0.5">Admin • 09:14</p>
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 
                            px-2 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-3 rounded-2xl rounded-tl-none 
                            shadow-[0_4px_12px_rgba(0,0,0,0.1),inset_0_1px_2px_rgba(255,255,255,0.8)]
                            border border-gray-200 transform transition-all duration-300 
                            hover:shadow-[0_6px_20px_rgba(0,0,0,0.15),inset_0_1px_2px_rgba(255,255,255,0.9)] 
-                           inline-block max-w-[80%] xs:max-w-[85%] sm:max-w-xs">
-              <p className="text-xs xs:text-sm sm:text-base">Tentu saja! Silakan tanyakan produk yang Anda minati.</p>
+                           inline-block max-w-[80%] xs:max-w-[85%] sm:max-w-xs
+                           max-[400px]:max-w-full max-[400px]:px-2 max-[400px]:py-1.5">
+              <p className="text-xs xs:text-sm sm:text-base max-[400px]:text-xs max-[400px]:leading-tight">
+                Tentu saja! Silakan tanyakan produk yang Anda minati.
+              </p>
             </div>
           </div>
         </div>
@@ -155,11 +178,13 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
 
       {/* Input Area - Tetap Rapi di Ukuran Kecil */}
       <div className="p-2 xs:p-3 sm:p-4 border-t border-amber-100 bg-white rounded-b-2xl
-                     shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]">
+                     shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]
+                     max-[400px]:p-2">
         <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 
                        bg-gradient-to-r from-amber-50 to-white p-1.5 xs:p-2 rounded-2xl 
                        shadow-[inset_0_2px_8px_rgba(186,118,48,0.1),0_2px_8px_rgba(186,118,48,0.05)]
-                       border border-amber-100">
+                       border border-amber-100
+                       max-[400px]:gap-1.5 max-[400px]:p-1.5">
           
           {/* Hidden File Input */}
           <input
@@ -178,9 +203,10 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                        shadow-[0_4px_12px_rgba(186,118,48,0.2),inset_0_1px_2px_rgba(255,255,255,0.8)]
                        transform transition-all duration-300 hover:scale-110 hover:bg-amber-50 
                        hover:shadow-[0_6px_16px_rgba(186,118,48,0.3),inset_0_1px_2px_rgba(255,255,255,0.9)] 
-                       flex-shrink-0"
+                       flex-shrink-0
+                       max-[400px]:w-7 max-[400px]:h-7"
           >
-            <i className="bx bx-plus text-lg xs:text-xl sm:text-2xl"></i>
+            <i className="bx bx-plus text-lg xs:text-xl sm:text-2xl max-[400px]:text-sm"></i>
           </button>
           
           {/* Message Input */}
@@ -189,7 +215,8 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
             placeholder="Type your message..."
             className="flex-1 px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 sm:py-3 bg-transparent 
                        outline-none text-gray-700 placeholder-gray-400 text-xs xs:text-sm sm:text-base 
-                       min-w-0 shadow-[inset_0_2px_4px_rgba(186,118,48,0.05)] rounded-xl"
+                       min-w-0 shadow-[inset_0_2px_4px_rgba(186,118,48,0.05)] rounded-xl
+                       max-[400px]:px-2 max-[400px]:py-1.5 max-[400px]:text-xs"
           />
           
           {/* Send Button - Tetap Rapi */}
@@ -198,14 +225,16 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                             shadow-[0_4px_12px_rgba(186,118,48,0.3),inset_0_1px_2px_rgba(255,255,255,0.2)]
                             transform transition-all duration-300 hover:scale-110 
                             hover:shadow-[0_6px_20px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)] 
-                            flex-shrink-0">
-            <i className="bx bx-send text-sm xs:text-lg sm:text-xl"></i>
+                            flex-shrink-0
+                            max-[400px]:w-7 max-[400px]:h-7">
+            <i className="bx bx-send text-sm xs:text-lg sm:text-xl max-[400px]:text-xs"></i>
           </button>
         </div>
         
         {/* File Type Info */}
         <p className="text-[10px] xs:text-xs text-gray-500 text-center mt-3 xs:mt-2
-                     drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
+                     drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]
+                     max-[400px]:text-[9px] max-[400px]:mt-2">
           Support: JPG, PNG (Max 5MB)
         </p>
       </div>

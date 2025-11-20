@@ -20,7 +20,7 @@ const Header = () => {
         max-[450px]:text-3xl max-[390px]:text-2xl transform transition-transform hover:scale-105
         whitespace-nowrap drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
       >
-       Raharpa <span className="text-amber-200 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">Thrift</span>
+       Raharpa <span className="text-amber-200 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">Shopp</span>
       </h2>
 
       {/* Navigation Buttons */}

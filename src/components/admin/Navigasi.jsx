@@ -3,6 +3,7 @@ import React from 'react'
 const Navigasi = ({ activePage, setActivePage, setShowLogoutModal }) => {
   const Nav = [
     "Dashboard", 
+    "Chat",
     "Akun Users",
     "Item Users",
     "Laporan",
@@ -12,6 +13,7 @@ const Navigasi = ({ activePage, setActivePage, setShowLogoutModal }) => {
   const getIcon = (name) => {
     switch(name) {
       case "Dashboard": return 'bx bx-home'
+      case "Chat": return 'bx bx-chat'
       case "Akun Users": return 'bx bx-user'
       case "Item Users": return 'bx bx-package'
       case "Laporan": return 'bx bx-bar-chart'

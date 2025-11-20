@@ -5,6 +5,7 @@ import AkunUsers from '../components/admin/AkunUsers'
 import ItemUsers from '../components/admin/ItemUsers'
 import Laporan from '../components/admin/Laporan'
 import Item from '../components/admin/Item'
+import Chat from '../components/admin/Chat'
 
 const Admin = () => {
   const [activePage, setActivePage] = useState('Dashboard')
@@ -14,6 +15,7 @@ const Admin = () => {
   const renderContent = () => {
     switch(activePage) {
       case 'Dashboard': return <Dashboard />
+      case 'Chat' : return <Chat/>
       case 'Akun Users': return <AkunUsers />
       case 'Item Users': return <ItemUsers />
       case 'Laporan': return <Laporan />

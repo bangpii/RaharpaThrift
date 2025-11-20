@@ -4,7 +4,7 @@ import Admin from './pages/Admin'
 function App() {
   return (
     <div>
-        <User/>/
+        <User/>
         {/* <Admin/> */}
     </div>
   )

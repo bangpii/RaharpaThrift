@@ -30,7 +30,11 @@ export default {
                         transform: 'scale(1)'
                     },
                 }
-            }
+            },
+            screens: {
+                'xs': '401px',
+                'sm': '640px',
+            },
         },
     },
     plugins: [],

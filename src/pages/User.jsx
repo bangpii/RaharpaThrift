@@ -36,10 +36,14 @@ const User = () => {
       >
         
         <Header />
-        <Title />
+        
+        {/* Title - Hidden di bawah 445px */}
+        <div className="max-[445px]:hidden">
+          <Title />
+        </div>
 
         {/* Layout kanan-kiri */}
-        <div className="flex gap-4 mt-4 h-[calc(100vh-200px)] min-h-[500px]">
+        <div className="flex gap-4 mt-4 h-[calc(100vh-200px)] min-h-[500px] max-[445px]:mt-2 max-[445px]:h-[calc(100vh-120px)]">
 
           <div 
             className="flex-1 h-full"

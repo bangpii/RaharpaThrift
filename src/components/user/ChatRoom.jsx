@@ -38,33 +38,39 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
       {/* Efek 3D Border */}
       <div className="absolute inset-0 rounded-2xl border-2 border-white/50 pointer-events-none"></div>
 
-      {/* Header */}
+      {/* Header - Padding disamakan dengan ChatRoom di bawah 400px */}
       <div className="flex items-center justify-between px-3 xs:px-4 sm:px-6 py-3 xs:py-4 border-b border-amber-100 
                      bg-gradient-to-r from-white to-amber-50 rounded-t-2xl
-                     shadow-[inset_0_2px_4px_rgba(255,255,255,0.8),0_2px_8px_rgba(186,118,48,0.1)]">
-        <div className="flex items-center gap-2 xs:gap-3 sm:gap-4">
+                     shadow-[inset_0_2px_4px_rgba(255,255,255,0.8),0_2px_8px_rgba(186,118,48,0.1)]
+                     max-[400px]:px-3">
+        <div className="flex items-center gap-2 xs:gap-3 sm:gap-4 max-[400px]:gap-2">
           {/* Profile 3D Effect */}
           <div className="relative">
             <div className="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 rounded-2xl 
                            bg-gradient-to-br from-amber-600 to-amber-700 
                            shadow-[0_8px_20px_rgba(186,118,48,0.3),inset_0_2px_4px_rgba(255,255,255,0.3)]
                            flex items-center justify-center text-white text-lg xs:text-xl sm:text-2xl 
-                           transform transition-transform hover:scale-110 hover:rotate-3">
+                           transform transition-transform hover:scale-110 hover:rotate-3
+                           max-[400px]:w-9 max-[400px]:h-9 max-[400px]:text-base">
               <i className="bx bx-user"></i>
             </div>
             <div className="absolute -bottom-1 -right-1 w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 
                            bg-green-400 rounded-full border-2 border-white 
-                           shadow-[0_2px_8px_rgba(34,197,94,0.5)]"></div>
+                           shadow-[0_2px_8px_rgba(34,197,94,0.5)]
+                           max-[400px]:w-2.5 max-[400px]:h-2.5"></div>
           </div>
           
-          <div>
+          <div className="max-[400px]:flex-1 max-[400px]:min-w-0">
             <h1 className="text-base xs:text-lg sm:text-xl font-bold text-gray-900 
-                          drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
+                          drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]
+                          max-[400px]:text-sm max-[400px]:truncate">
               Live Chat Room
             </h1>
-            <p className="text-xs text-green-600 font-medium flex items-center gap-1">
+            <p className="text-xs text-green-600 font-medium flex items-center gap-1
+                         max-[400px]:text-[10px] max-[400px]:mt-0.5">
               <span className="w-1.5 h-1.5 xs:w-2 xs:h-2 bg-green-500 rounded-full animate-pulse 
-                              shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+                              shadow-[0_0_8px_rgba(34,197,94,0.6)]
+                              max-[400px]:w-1.5 max-[400px]:h-1.5"></span>
               Admin • Online
             </p>
           </div>
@@ -76,13 +82,14 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
           className="p-2 xs:p-3 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 
                      text-white shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
                      transform transition-all duration-300 hover:scale-110 
-                     hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden"
+                     hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden
+                     max-[400px]:p-2 max-[400px]:min-w-[36px] max-[400px]:h-9"
         >
-          <i className="bx bx-heart text-base xs:text-lg sm:text-xl"></i>
+          <i className="bx bx-heart text-base xs:text-lg sm:text-xl max-[400px]:text-sm"></i>
         </button>
       </div>
 
-      {/* Chat Area - OVERFLOW Y AUTO dengan scrollbar hidden */}
+      {/* Chat Area - Padding disamakan dengan Header di bawah 400px */}
       <div className="flex-1 p-3 xs:p-4 sm:p-6 overflow-y-auto space-y-3 xs:space-y-4 sm:space-y-6 
                      bg-gradient-to-b from-white to-amber-25
                      shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]
@@ -169,7 +176,7 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
 
       </div>
 
-      {/* Input Area - Tetap Rapi di Ukuran Kecil */}
+      {/* Input Area - Padding disamakan dengan Header di bawah 400px */}
       <div className="p-2 xs:p-3 sm:p-4 border-t border-amber-100 bg-white rounded-b-2xl
                      shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]
                      max-[400px]:px-3 max-[400px]:py-2">

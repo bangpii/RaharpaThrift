@@ -138,7 +138,6 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                        max-[470px]:text-sm 
                        max-[440px]:text-sm
                        max-[420px]:text-sm 
-                       max-[420px]:-mt-[30rem]
                        max-[401px]:text-xs
                        max-[400px]:text-sm max-[380px]:text-xs"></i>
         </button>

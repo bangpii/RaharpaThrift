@@ -34,12 +34,11 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                     shadow-[0_10px_30px_rgba(186,118,48,0.1),0_4px_12px_rgba(186,118,48,0.05),inset_0_1px_0_rgba(255,255,255,0.8)]
                     transform transition-all duration-500 hover:shadow-[0_20px_40px_rgba(186,118,48,0.15),0_8px_24px_rgba(186,118,48,0.1),inset_0_1px_0_rgba(255,255,255,0.9)]
                     hover:-translate-y-1 relative
-                    max-[425px]:w-[calc(100%-16px)] max-[425px]:mx-auto
-                    max-[420px]:w-[calc(100%-14px)]
-                    max-[415px]:w-[calc(100%-12px)]
-                    max-[410px]:w-[calc(100%-10px)]
-                    max-[405px]:w-[calc(100%-8px)]
-                    max-[401px]:w-[calc(100%-6px)]
+                    max-[440px]:w-[calc(100%-20px)] max-[440px]:mx-auto
+                    max-[430px]:w-[calc(100%-18px)]
+                    max-[420px]:w-[calc(100%-16px)]
+                    max-[410px]:w-[calc(100%-14px)]
+                    max-[401px]:w-[calc(100%-12px)]
                     max-[380px]:rounded-xl max-[380px]:border max-[380px]:border-amber-100">
 
       {/* Efek 3D Border */}
@@ -50,14 +49,14 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
       <div className="flex items-center justify-between px-3 xs:px-4 sm:px-6 py-3 xs:py-4 border-b border-amber-100 
                      bg-gradient-to-r from-white to-amber-50 rounded-t-2xl
                      shadow-[inset_0_2px_4px_rgba(255,255,255,0.8),0_2px_8px_rgba(186,118,48,0.1)]
-                     max-[425px]:px-3 max-[425px]:py-3
-                     max-[415px]:px-2.5 max-[415px]:py-2.5
-                     max-[405px]:px-2 max-[405px]:py-2
+                     max-[440px]:px-3 max-[440px]:py-3
+                     max-[420px]:px-2.5 max-[420px]:py-2.5
+                     max-[401px]:px-2 max-[401px]:py-2
                      max-[400px]:px-3 max-[380px]:px-2 max-[380px]:py-2 max-[380px]:rounded-t-xl">
         <div className="flex items-center gap-2 xs:gap-3 sm:gap-4 
-                       max-[425px]:gap-2
-                       max-[415px]:gap-1.5
-                       max-[405px]:gap-1
+                       max-[440px]:gap-2
+                       max-[420px]:gap-1.5
+                       max-[401px]:gap-1.5
                        max-[400px]:gap-2 max-[380px]:gap-1.5">
           {/* Profile 3D Effect */}
           <div className="relative">
@@ -66,9 +65,9 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                            shadow-[0_8px_20px_rgba(186,118,48,0.3),inset_0_2px_4px_rgba(255,255,255,0.3)]
                            flex items-center justify-center text-white text-lg xs:text-xl sm:text-2xl 
                            transform transition-transform hover:scale-110 hover:rotate-3
-                           max-[425px]:w-9 max-[425px]:h-9 max-[425px]:text-base
-                           max-[415px]:w-8 max-[415px]:h-8 max-[415px]:text-sm
-                           max-[405px]:w-8 max-[405px]:h-8 max-[405px]:text-sm
+                           max-[440px]:w-9 max-[440px]:h-9 max-[440px]:text-base
+                           max-[420px]:w-9 max-[420px]:h-9 max-[420px]:text-base
+                           max-[401px]:w-8 max-[401px]:h-8 max-[401px]:text-sm
                            max-[400px]:w-9 max-[400px]:h-9 max-[400px]:text-base
                            max-[380px]:w-8 max-[380px]:h-8 max-[380px]:text-sm max-[380px]:rounded-lg">
               <i className="bx bx-user"></i>
@@ -76,37 +75,37 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
             <div className="absolute -bottom-1 -right-1 w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 
                            bg-green-400 rounded-full border-2 border-white 
                            shadow-[0_2px_8px_rgba(34,197,94,0.5)]
-                           max-[425px]:w-2.5 max-[425px]:h-2.5
-                           max-[415px]:w-2 max-[415px]:h-2 max-[415px]:-bottom-0.5 max-[415px]:-right-0.5
-                           max-[405px]:w-2 max-[405px]:h-2 max-[405px]:-bottom-0.5 max-[405px]:-right-0.5
+                           max-[440px]:w-2.5 max-[440px]:h-2.5
+                           max-[420px]:w-2.5 max-[420px]:h-2.5
+                           max-[401px]:w-2 max-[401px]:h-2 max-[401px]:-bottom-0.5 max-[401px]:-right-0.5
                            max-[400px]:w-2.5 max-[400px]:h-2.5
                            max-[380px]:w-2 max-[380px]:h-2 max-[380px]:-bottom-0.5 max-[380px]:-right-0.5"></div>
           </div>
           
-          <div className="max-[425px]:flex-1 max-[425px]:min-w-0
-                         max-[415px]:flex-1 max-[415px]:min-w-0 max-[415px]:mr-1
-                         max-[405px]:flex-1 max-[405px]:min-w-0 max-[405px]:mr-1
+          <div className="max-[440px]:flex-1 max-[440px]:min-w-0
+                         max-[420px]:flex-1 max-[420px]:min-w-0
+                         max-[401px]:flex-1 max-[401px]:min-w-0
                          max-[400px]:flex-1 max-[400px]:min-w-0 max-[380px]:min-w-0 max-[380px]:flex-1">
             <h1 className="text-base xs:text-lg sm:text-xl font-bold text-gray-900 
                           drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]
-                          max-[425px]:text-sm max-[425px]:truncate
-                          max-[415px]:text-xs max-[415px]:truncate max-[415px]:leading-4
-                          max-[405px]:text-xs max-[405px]:truncate max-[405px]:leading-4
+                          max-[440px]:text-sm max-[440px]:truncate
+                          max-[420px]:text-sm max-[420px]:truncate
+                          max-[401px]:text-xs max-[401px]:truncate max-[401px]:leading-4
                           max-[400px]:text-sm max-[400px]:truncate
                           max-[380px]:text-xs max-[380px]:leading-tight">
               Live Chat Room
             </h1>
             <p className="text-xs text-green-600 font-medium flex items-center gap-1
-                         max-[425px]:text-[10px] max-[425px]:mt-0.5
-                         max-[415px]:text-[9px] max-[415px]:mt-0 max-[415px]:gap-0.5
-                         max-[405px]:text-[9px] max-[405px]:mt-0 max-[405px]:gap-0.5
+                         max-[440px]:text-[10px] max-[440px]:mt-0.5
+                         max-[420px]:text-[10px] max-[420px]:mt-0.5
+                         max-[401px]:text-[9px] max-[401px]:mt-0 max-[401px]:gap-0.5
                          max-[400px]:text-[10px] max-[400px]:mt-0.5
                          max-[380px]:text-[9px] max-[380px]:mt-0 max-[380px]:gap-0.5">
               <span className="w-1.5 h-1.5 xs:w-2 xs:h-2 bg-green-500 rounded-full animate-pulse 
                               shadow-[0_0_8px_rgba(34,197,94,0.6)]
-                              max-[425px]:w-1.5 max-[425px]:h-1.5
-                              max-[415px]:w-1 max-[415px]:h-1
-                              max-[405px]:w-1 max-[405px]:h-1
+                              max-[440px]:w-1.5 max-[440px]:h-1.5
+                              max-[420px]:w-1.5 max-[420px]:h-1.5
+                              max-[401px]:w-1 max-[401px]:h-1
                               max-[400px]:w-1.5 max-[400px]:h-1.5
                               max-[380px]:w-1 max-[380px]:h-1"></span>
               Admin • Online
@@ -121,16 +120,16 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                      text-white shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
                      transform transition-all duration-300 hover:scale-110 
                      hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden
-                     max-[425px]:p-2 max-[425px]:min-w-[36px] max-[425px]:h-9
-                     max-[415px]:p-1.5 max-[415px]:min-w-[32px] max-[415px]:h-8
-                     max-[405px]:p-1.5 max-[405px]:min-w-[30px] max-[405px]:h-8
+                     max-[440px]:p-2 max-[440px]:min-w-[36px] max-[440px]:h-9
+                     max-[420px]:p-2 max-[420px]:min-w-[36px] max-[420px]:h-9
+                     max-[401px]:p-1.5 max-[401px]:min-w-[32px] max-[401px]:h-8
                      max-[400px]:p-2 max-[400px]:min-w-[36px] max-[400px]:h-9
                      max-[380px]:p-1.5 max-[380px]:min-w-[32px] max-[380px]:h-8 max-[380px]:rounded-lg"
         >
           <i className="bx bx-heart text-base xs:text-lg sm:text-xl 
-                       max-[425px]:text-sm
-                       max-[415px]:text-xs
-                       max-[405px]:text-xs
+                       max-[440px]:text-sm
+                       max-[420px]:text-sm
+                       max-[401px]:text-xs
                        max-[400px]:text-sm max-[380px]:text-xs"></i>
         </button>
       </div>
@@ -140,37 +139,37 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                      bg-gradient-to-b from-white to-amber-25
                      shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]
                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
-                     max-[425px]:p-3 max-[425px]:space-y-3
-                     max-[415px]:p-2.5 max-[415px]:space-y-2.5
-                     max-[405px]:p-2 max-[405px]:space-y-2
+                     max-[440px]:p-3 max-[440px]:space-y-3
+                     max-[420px]:p-2.5 max-[420px]:space-y-2.5
+                     max-[401px]:p-2 max-[401px]:space-y-2
                      max-[400px]:px-3 max-[380px]:p-2 max-[380px]:space-y-2">
         
         {/* Admin Message */}
         <div className="flex items-start gap-2 xs:gap-3 sm:gap-4 transform transition-transform
-                       max-[425px]:gap-2
-                       max-[415px]:gap-1.5
-                       max-[405px]:gap-1
+                       max-[440px]:gap-2
+                       max-[420px]:gap-1.5
+                       max-[401px]:gap-1.5
                        max-[400px]:gap-2 max-[380px]:gap-1.5">
           <div className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 rounded-2xl 
                          bg-gradient-to-br from-gray-400 to-gray-600 
                          shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.3)]
                          flex items-center justify-center text-white shadow-lg flex-shrink-0
-                         max-[425px]:w-7 max-[425px]:h-7
-                         max-[415px]:w-6 max-[415px]:h-6
-                         max-[405px]:w-6 max-[405px]:h-6
+                         max-[440px]:w-7 max-[440px]:h-7
+                         max-[420px]:w-7 max-[420px]:h-7
+                         max-[401px]:w-6 max-[401px]:h-6
                          max-[400px]:w-7 max-[400px]:h-7
                          max-[380px]:w-6 max-[380px]:h-6 max-[380px]:rounded-lg">
             <i className="bx bx-user text-xs xs:text-sm sm:text-base 
-                         max-[425px]:text-xs
-                         max-[415px]:text-[10px]
-                         max-[405px]:text-[10px]
+                         max-[440px]:text-xs
+                         max-[420px]:text-xs
+                         max-[401px]:text-[10px]
                          max-[400px]:text-xs max-[380px]:text-[10px]"></i>
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-xs font-semibold text-gray-600 mb-1 
-                         max-[425px]:text-[10px] max-[425px]:mb-0.5
-                         max-[415px]:text-[9px] max-[415px]:mb-0
-                         max-[405px]:text-[9px] max-[405px]:mb-0
+                         max-[440px]:text-[10px] max-[440px]:mb-0.5
+                         max-[420px]:text-[10px] max-[420px]:mb-0.5
+                         max-[401px]:text-[9px] max-[401px]:mb-0
                          max-[400px]:text-[10px] max-[400px]:mb-0.5 max-[380px]:text-[9px] max-[380px]:mb-0">Admin • 09:12</p>
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 
                            px-2 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-3 rounded-2xl rounded-tl-none 
@@ -178,15 +177,15 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                            border border-gray-200 transform transition-all duration-300 
                            hover:shadow-[0_6px_20px_rgba(0,0,0,0.15),inset_0_1px_2px_rgba(255,255,255,0.9)] 
                            inline-block max-w-[80%] xs:max-w-[85%] sm:max-w-xs
-                           max-[425px]:max-w-[90%] max-[425px]:px-2 max-[425px]:py-1.5
-                           max-[415px]:max-w-[92%] max-[415px]:px-1.5 max-[415px]:py-1
-                           max-[405px]:max-w-[94%] max-[405px]:px-1.5 max-[405px]:py-1
+                           max-[440px]:max-w-[90%] max-[440px]:px-2 max-[440px]:py-1.5
+                           max-[420px]:max-w-[92%] max-[420px]:px-2 max-[420px]:py-1.5
+                           max-[401px]:max-w-[94%] max-[401px]:px-1.5 max-[401px]:py-1
                            max-[400px]:max-w-[calc(100%-10px)] max-[400px]:px-2 max-[400px]:py-1.5
                            max-[380px]:max-w-[calc(100%-8px)] max-[380px]:px-1.5 max-[380px]:py-1 max-[380px]:rounded-xl">
               <p className="text-xs xs:text-sm sm:text-base 
-                           max-[425px]:text-xs max-[425px]:leading-tight
-                           max-[415px]:text-[11px] max-[415px]:leading-tight
-                           max-[405px]:text-[11px] max-[405px]:leading-tight
+                           max-[440px]:text-xs max-[440px]:leading-tight
+                           max-[420px]:text-xs max-[420px]:leading-tight
+                           max-[401px]:text-[11px] max-[401px]:leading-tight
                            max-[400px]:text-xs max-[400px]:leading-tight max-[380px]:text-[11px] max-[380px]:leading-tight">
                 Hallo, ada yang bisa saya bantu?
               </p>
@@ -196,15 +195,15 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
 
         {/* User Message */}
         <div className="flex items-start justify-end gap-2 xs:gap-3 sm:gap-4 transform transition-transform
-                       max-[425px]:gap-2
-                       max-[415px]:gap-1.5
-                       max-[405px]:gap-1
+                       max-[440px]:gap-2
+                       max-[420px]:gap-1.5
+                       max-[401px]:gap-1.5
                        max-[400px]:gap-2 max-[380px]:gap-1.5">
           <div className="flex-1 min-w-0 text-right">
             <p className="text-xs font-semibold text-gray-600 mb-1 
-                         max-[425px]:text-[10px] max-[425px]:mb-0.5
-                         max-[415px]:text-[9px] max-[415px]:mb-0
-                         max-[405px]:text-[9px] max-[405px]:mb-0
+                         max-[440px]:text-[10px] max-[440px]:mb-0.5
+                         max-[420px]:text-[10px] max-[420px]:mb-0.5
+                         max-[401px]:text-[9px] max-[401px]:mb-0
                          max-[400px]:text-[10px] max-[400px]:mb-0.5 max-[380px]:text-[9px] max-[380px]:mb-0">You • 09:13</p>
             <div className="bg-gradient-to-r from-amber-600 to-amber-700 text-white 
                            px-2 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-3 rounded-2xl rounded-tr-none 
@@ -212,15 +211,15 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                            inline-block transform transition-all duration-300 
                            hover:shadow-[0_6px_20px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)] 
                            max-w-[80%] xs:max-w-[85%] sm:max-w-xs
-                           max-[425px]:max-w-[90%] max-[425px]:px-2 max-[425px]:py-1.5
-                           max-[415px]:max-w-[92%] max-[415px]:px-1.5 max-[415px]:py-1
-                           max-[405px]:max-w-[94%] max-[405px]:px-1.5 max-[405px]:py-1
+                           max-[440px]:max-w-[90%] max-[440px]:px-2 max-[440px]:py-1.5
+                           max-[420px]:max-w-[92%] max-[420px]:px-2 max-[420px]:py-1.5
+                           max-[401px]:max-w-[94%] max-[401px]:px-1.5 max-[401px]:py-1
                            max-[400px]:max-w-[calc(100%-10px)] max-[400px]:px-2 max-[400px]:py-1.5
                            max-[380px]:max-w-[calc(100%-8px)] max-[380px]:px-1.5 max-[380px]:py-1 max-[380px]:rounded-xl">
               <p className="text-xs xs:text-sm sm:text-base 
-                           max-[425px]:text-xs max-[425px]:leading-tight
-                           max-[415px]:text-[11px] max-[415px]:leading-tight
-                           max-[405px]:text-[11px] max-[405px]:leading-tight
+                           max-[440px]:text-xs max-[440px]:leading-tight
+                           max-[420px]:text-xs max-[420px]:leading-tight
+                           max-[401px]:text-[11px] max-[401px]:leading-tight
                            max-[400px]:text-xs max-[400px]:leading-tight max-[380px]:text-[11px] max-[380px]:leading-tight">
                 Saya ingin bertanya tentang produk...
               </p>
@@ -230,45 +229,45 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                          bg-gradient-to-br from-amber-600 to-amber-700 
                          shadow-[0_4px_12px_rgba(186,118,48,0.3),inset_0_1px_2px_rgba(255,255,255,0.3)]
                          flex items-center justify-center text-white shadow-lg flex-shrink-0
-                         max-[425px]:w-7 max-[425px]:h-7
-                         max-[415px]:w-6 max-[415px]:h-6
-                         max-[405px]:w-6 max-[405px]:h-6
+                         max-[440px]:w-7 max-[440px]:h-7
+                         max-[420px]:w-7 max-[420px]:h-7
+                         max-[401px]:w-6 max-[401px]:h-6
                          max-[400px]:w-7 max-[400px]:h-7
                          max-[380px]:w-6 max-[380px]:h-6 max-[380px]:rounded-lg">
             <i className="bx bx-user text-xs xs:text-sm sm:text-base 
-                         max-[425px]:text-xs
-                         max-[415px]:text-[10px]
-                         max-[405px]:text-[10px]
+                         max-[440px]:text-xs
+                         max-[420px]:text-xs
+                         max-[401px]:text-[10px]
                          max-[400px]:text-xs max-[380px]:text-[10px]"></i>
           </div>
         </div>
 
         {/* Tambahkan beberapa chat untuk demo scroll */}
         <div className="flex items-start gap-2 xs:gap-3 sm:gap-4 transform transition-transform
-                       max-[425px]:gap-2
-                       max-[415px]:gap-1.5
-                       max-[405px]:gap-1
+                       max-[440px]:gap-2
+                       max-[420px]:gap-1.5
+                       max-[401px]:gap-1.5
                        max-[400px]:gap-2 max-[380px]:gap-1.5">
           <div className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 rounded-2xl 
                          bg-gradient-to-br from-gray-400 to-gray-600 
                          shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.3)]
                          flex items-center justify-center text-white shadow-lg flex-shrink-0
-                         max-[425px]:w-7 max-[425px]:h-7
-                         max-[415px]:w-6 max-[415px]:h-6
-                         max-[405px]:w-6 max-[405px]:h-6
+                         max-[440px]:w-7 max-[440px]:h-7
+                         max-[420px]:w-7 max-[420px]:h-7
+                         max-[401px]:w-6 max-[401px]:h-6
                          max-[400px]:w-7 max-[400px]:h-7
                          max-[380px]:w-6 max-[380px]:h-6 max-[380px]:rounded-lg">
             <i className="bx bx-user text-xs xs:text-sm sm:text-base 
-                         max-[425px]:text-xs
-                         max-[415px]:text-[10px]
-                         max-[405px]:text-[10px]
+                         max-[440px]:text-xs
+                         max-[420px]:text-xs
+                         max-[401px]:text-[10px]
                          max-[400px]:text-xs max-[380px]:text-[10px]"></i>
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-xs font-semibold text-gray-600 mb-1 
-                         max-[425px]:text-[10px] max-[425px]:mb-0.5
-                         max-[415px]:text-[9px] max-[415px]:mb-0
-                         max-[405px]:text-[9px] max-[405px]:mb-0
+                         max-[440px]:text-[10px] max-[440px]:mb-0.5
+                         max-[420px]:text-[10px] max-[420px]:mb-0.5
+                         max-[401px]:text-[9px] max-[401px]:mb-0
                          max-[400px]:text-[10px] max-[400px]:mb-0.5 max-[380px]:text-[9px] max-[380px]:mb-0">Admin • 09:14</p>
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 
                            px-2 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-3 rounded-2xl rounded-tl-none 
@@ -276,15 +275,15 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                            border border-gray-200 transform transition-all duration-300 
                            hover:shadow-[0_6px_20px_rgba(0,0,0,0.15),inset_0_1px_2px_rgba(255,255,255,0.9)] 
                            inline-block max-w-[80%] xs:max-w-[85%] sm:max-w-xs
-                           max-[425px]:max-w-[90%] max-[425px]:px-2 max-[425px]:py-1.5
-                           max-[415px]:max-w-[92%] max-[415px]:px-1.5 max-[415px]:py-1
-                           max-[405px]:max-w-[94%] max-[405px]:px-1.5 max-[405px]:py-1
+                           max-[440px]:max-w-[90%] max-[440px]:px-2 max-[440px]:py-1.5
+                           max-[420px]:max-w-[92%] max-[420px]:px-2 max-[420px]:py-1.5
+                           max-[401px]:max-w-[94%] max-[401px]:px-1.5 max-[401px]:py-1
                            max-[400px]:max-w-[calc(100%-10px)] max-[400px]:px-2 max-[400px]:py-1.5
                            max-[380px]:max-w-[calc(100%-8px)] max-[380px]:px-1.5 max-[380px]:py-1 max-[380px]:rounded-xl">
               <p className="text-xs xs:text-sm sm:text-base 
-                           max-[425px]:text-xs max-[425px]:leading-tight
-                           max-[415px]:text-[11px] max-[415px]:leading-tight
-                           max-[405px]:text-[11px] max-[405px]:leading-tight
+                           max-[440px]:text-xs max-[440px]:leading-tight
+                           max-[420px]:text-xs max-[420px]:leading-tight
+                           max-[401px]:text-[11px] max-[401px]:leading-tight
                            max-[400px]:text-xs max-[400px]:leading-tight max-[380px]:text-[11px] max-[380px]:leading-tight">
                 Tentu saja! Silakan tanyakan produk yang Anda minati.
               </p>
@@ -297,17 +296,17 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
       {/* Input Area */}
       <div className="p-2 xs:p-3 sm:p-4 border-t border-amber-100 bg-white rounded-b-2xl
                      shadow-[inset_0_2px_8px_rgba(186,118,48,0.05)]
-                     max-[425px]:p-3
-                     max-[415px]:p-2.5
-                     max-[405px]:p-2
+                     max-[440px]:p-3
+                     max-[420px]:p-2.5
+                     max-[401px]:p-2
                      max-[400px]:px-3 max-[400px]:py-2 max-[380px]:p-2 max-[380px]:rounded-b-xl">
         <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 
                        bg-gradient-to-r from-amber-50 to-white p-1.5 xs:p-2 rounded-2xl 
                        shadow-[inset_0_2px_8px_rgba(186,118,48,0.1),0_2px_8px_rgba(186,118,48,0.05)]
                        border border-amber-100
-                       max-[425px]:gap-1.5 max-[425px]:p-1.5
-                       max-[415px]:gap-1 max-[415px]:p-1
-                       max-[405px]:gap-1 max-[405px]:p-1
+                       max-[440px]:gap-1.5 max-[440px]:p-1.5
+                       max-[420px]:gap-1.5 max-[420px]:p-1.5
+                       max-[401px]:gap-1 max-[401px]:p-1
                        max-[400px]:gap-1.5 max-[400px]:p-1.5
                        max-[380px]:gap-1 max-[380px]:p-1 max-[380px]:rounded-lg">
           
@@ -329,16 +328,16 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                        transform transition-all duration-300 hover:scale-110 hover:bg-amber-50 
                        hover:shadow-[0_6px_16px_rgba(186,118,48,0.3),inset_0_1px_2px_rgba(255,255,255,0.9)] 
                        flex-shrink-0
-                       max-[425px]:w-8 max-[425px]:h-8
-                       max-[415px]:w-7 max-[415px]:h-7
-                       max-[405px]:w-7 max-[405px]:h-7
+                       max-[440px]:w-8 max-[440px]:h-8
+                       max-[420px]:w-8 max-[420px]:h-8
+                       max-[401px]:w-7 max-[401px]:h-7
                        max-[400px]:w-7 max-[400px]:h-7
                        max-[380px]:w-6 max-[380px]:h-6 max-[380px]:rounded-lg"
           >
             <i className="bx bx-plus text-lg xs:text-xl sm:text-2xl 
-                         max-[425px]:text-base
-                         max-[415px]:text-sm
-                         max-[405px]:text-sm
+                         max-[440px]:text-base
+                         max-[420px]:text-base
+                         max-[401px]:text-sm
                          max-[400px]:text-sm max-[380px]:text-xs"></i>
           </button>
           
@@ -349,9 +348,9 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
             className="flex-1 px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 sm:py-3 bg-transparent 
                        outline-none text-gray-700 placeholder-gray-400 text-xs xs:text-sm sm:text-base 
                        min-w-0 shadow-[inset_0_2px_4px_rgba(186,118,48,0.05)] rounded-xl
-                       max-[425px]:px-2 max-[425px]:py-1.5 max-[425px]:text-xs
-                       max-[415px]:px-1.5 max-[415px]:py-1 max-[415px]:text-[11px]
-                       max-[405px]:px-1.5 max-[405px]:py-1 max-[405px]:text-[11px]
+                       max-[440px]:px-2 max-[440px]:py-1.5 max-[440px]:text-xs
+                       max-[420px]:px-2 max-[420px]:py-1.5 max-[420px]:text-xs
+                       max-[401px]:px-1.5 max-[401px]:py-1 max-[401px]:text-[11px]
                        max-[400px]:px-2 max-[400px]:py-1.5 max-[400px]:text-xs
                        max-[380px]:px-1.5 max-[380px]:py-1 max-[380px]:text-[11px] max-[380px]:rounded-lg"
           />
@@ -363,15 +362,15 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
                             transform transition-all duration-300 hover:scale-110 
                             hover:shadow-[0_6px_20px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)] 
                             flex-shrink-0
-                            max-[425px]:w-8 max-[425px]:h-8
-                            max-[415px]:w-7 max-[415px]:h-7
-                            max-[405px]:w-7 max-[405px]:h-7
+                            max-[440px]:w-8 max-[440px]:h-8
+                            max-[420px]:w-8 max-[420px]:h-8
+                            max-[401px]:w-7 max-[401px]:h-7
                             max-[400px]:w-7 max-[400px]:h-7
                             max-[380px]:w-6 max-[380px]:h-6 max-[380px]:rounded-lg">
             <i className="bx bx-send text-sm xs:text-lg sm:text-xl 
-                         max-[425px]:text-sm
-                         max-[415px]:text-xs
-                         max-[405px]:text-xs
+                         max-[440px]:text-sm
+                         max-[420px]:text-sm
+                         max-[401px]:text-xs
                          max-[400px]:text-xs max-[380px]:text-[10px]"></i>
           </button>
         </div>
@@ -379,9 +378,9 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
         {/* File Type Info */}
         <p className="text-[10px] xs:text-xs text-gray-500 text-center mt-3 xs:mt-2
                      drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]
-                     max-[425px]:text-[10px] max-[425px]:mt-2
-                     max-[415px]:text-[9px] max-[415px]:mt-1.5
-                     max-[405px]:text-[9px] max-[405px]:mt-1.5
+                     max-[440px]:text-[10px] max-[440px]:mt-2
+                     max-[420px]:text-[10px] max-[420px]:mt-2
+                     max-[401px]:text-[9px] max-[401px]:mt-1.5
                      max-[400px]:text-[9px] max-[400px]:mt-2
                      max-[380px]:text-[8px] max-[380px]:mt-1">
           Support: JPG, PNG (Max 5MB)

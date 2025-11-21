@@ -63,7 +63,7 @@ const WishList = ({ onClose }) => {
       {/* Efek 3D Border */}
       <div className="absolute inset-0 rounded-2xl border-2 border-white/50 pointer-events-none"></div>
 
-      {/* Header - Dirapikan untuk mobile */}
+      {/* Header - Logo, Title, dan Close Button sejajar */}
       <div className="flex items-center justify-between mb-4 xs:mb-6">
         <div className="flex items-center gap-2 xs:gap-3">
           <div className="w-8 h-8 xs:w-10 xs:h-10 bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl 
@@ -76,37 +76,21 @@ const WishList = ({ onClose }) => {
           </h1>
         </div>
         
-        <div className="flex items-center gap-2">
-          {/* Search Input - Diperkecil untuk mobile */}
-          <div className="relative hidden xs:block">
-            <input 
-              type="text"
-              placeholder="Cari..."
-              className="pl-8 pr-3 py-1.5 xs:py-2 border border-amber-200 rounded-xl 
-                         focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent 
-                         bg-white text-xs xs:text-sm w-32 xs:w-40
-                         shadow-[0_4px_12px_rgba(186,118,48,0.1),inset_0_2px_4px_rgba(255,255,255,0.8)]"
-            />
-            <i className="bx bx-search absolute left-2 top-1/2 transform -translate-y-1/2 text-amber-400 text-sm
-                         drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]"></i>
-          </div>
-
-          {/* Close Button */}
-          <button 
-            onClick={onClose}
-            className="w-8 h-8 xs:w-10 xs:h-10 flex items-center justify-center rounded-xl 
-                       bg-gradient-to-r from-amber-600 to-amber-700 text-white 
-                       shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
-                       transform transition-all duration-300 hover:scale-110 
-                       hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)]"
-          >
-            <i className="bx bx-x text-base xs:text-xl"></i>
-          </button>
-        </div>
+        {/* Close Button - Hilang di 1023px ke atas */}
+        <button 
+          onClick={onClose}
+          className="w-8 h-8 xs:w-10 xs:h-10 flex items-center justify-center rounded-xl 
+                     bg-gradient-to-r from-amber-600 to-amber-700 text-white 
+                     shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
+                     transform transition-all duration-300 hover:scale-110 
+                     hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden"
+        >
+          <i className="bx bx-x text-base xs:text-xl"></i>
+        </button>
       </div>
 
-      {/* Search Input untuk Mobile - Tampil terpisah */}
-      <div className="relative mb-4 xs:hidden">
+      {/* Search Input untuk Semua Device - Tampil di bawah header */}
+      <div className="relative mb-4">
         <input 
           type="text"
           placeholder="Cari item wishlist..."

@@ -120,27 +120,27 @@ const ChatRoom = ({ showWishlist, setShowWishlist }) => {
           </div>
         </div>
 
-        {/* Wishlist Toggle Button untuk Mobile */}
         <button 
-          onClick={() => setShowWishlist(!showWishlist)}
-          className="p-2 xs:p-3 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 
-                     text-white shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
-                     transform transition-all duration-300 hover:scale-110 
-                     hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden
-                     max-[470px]:p-2 max-[470px]:min-w-[36px] max-[470px]:h-9
-                     max-[440px]:p-2 max-[440px]:min-w-[36px] max-[440px]:h-9
-                     max-[420px]:p-2 max-[420px]:min-w-[36px] max-[420px]:h-9
-                     max-[401px]:p-1.5 max-[401px]:min-w-[32px] max-[401px]:h-8
-                     max-[400px]:p-2 max-[400px]:min-w-[36px] max-[400px]:h-9
-                     max-[380px]:p-1.5 max-[380px]:min-w-[32px] max-[380px]:h-8 max-[380px]:rounded-lg"
-        >
-          <i className="bx bx-heart text-base xs:text-lg sm:text-xl 
-                       max-[470px]:text-sm 
-                       max-[440px]:text-sm
-                       max-[420px]:text-sm 
-                       max-[401px]:text-xs
-                       max-[400px]:text-sm max-[380px]:text-xs"></i>
-        </button>
+  onClick={() => setShowWishlist(!showWishlist)}
+  className="p-2 xs:p-3 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 
+             text-white shadow-[0_6px_16px_rgba(186,118,48,0.4),inset_0_1px_2px_rgba(255,255,255,0.3)]
+             transform transition-all duration-300 hover:scale-110 
+             hover:shadow-[0_8px_24px_rgba(186,118,48,0.5),inset_0_1px_2px_rgba(255,255,255,0.4)] lg:hidden
+             flex items-center justify-center
+             max-[470px]:p-2 max-[470px]:w-9 max-[470px]:h-9
+             max-[440px]:p-2 max-[440px]:w-9 max-[440px]:h-9
+             max-[420px]:p-2 max-[420px]:w-9 max-[420px]:h-9
+             max-[401px]:p-1.5 max-[401px]:w-8 max-[401px]:h-8
+             max-[400px]:p-2 max-[400px]:w-9 max-[400px]:h-9
+             max-[380px]:p-1.5 max-[380px]:w-8 max-[380px]:h-8 max-[380px]:rounded-lg"
+>
+  <i className="bx bx-heart text-base xs:text-lg sm:text-xl 
+               max-[470px]:text-sm 
+               max-[440px]:text-sm
+               max-[420px]:text-sm 
+               max-[401px]:text-xs
+               max-[400px]:text-sm max-[380px]:text-xs"></i>
+</button>
       </div>
 
       {/* Chat Area */}

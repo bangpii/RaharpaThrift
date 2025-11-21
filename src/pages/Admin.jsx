@@ -44,7 +44,7 @@ const Admin = () => {
         {/* Mobile Toggle Button - Kecil */}
         <button
           onClick={handleMobileNavToggle}
-          className="fixed top-4 right-4 z-50 md:hidden bg-pink-600 text-white p-2 rounded-lg shadow-lg hover:bg-pink-700 transition-colors"
+          className="fixed top-4 right-4 z-50 md:hidden bg-amber-600 text-white p-2 rounded-lg shadow-lg hover:bg-amber-700 transition-colors"
         >
           <i className={`bx ${isMobileNavOpen ? 'bx-x' : 'bx-menu'} text-lg`}></i>
         </button>
